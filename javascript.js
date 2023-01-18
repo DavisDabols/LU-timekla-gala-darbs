@@ -42,6 +42,8 @@ $(document).ready(function () {
         $("#nameCheck").text("Name must be more than 3 and less than 20 characters");
         $("#nameCheck").css("color", "black");
         $("#name").removeClass("input-error");
+        nameError = true;
+        return true;
       }
     }
     function validateEmail() {
