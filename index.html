@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>EFT</title>
+</head>
+<body>
+    <div class="top-banner">
+        <h1 class="banner-text">Escape From Tarkov</h1>
+    </div>
+    <nav class="navbar">
+        <a href="#top">Escape From Tarkov</a>
+        <div class="float-right">
+            <a href="#about">About</a>
+            <a href="#requirements">Requirements</a>
+            <a href="#download">Download Info</a>
+            <a href="#questions">Questions</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="about">
+            <h2 id="about">About</h2>
+            <img src="images/tarkovcover.webp">
+            <p><strong>Escape from Tarkov</strong> is a hardcore and realistic online first-person action RPG/Simulator with MMO features and a story-driven walkthrough.<br><br>
+                
+                With each passing day the situation in the Norvinsk region grows more and more complicated. Incessant warfare in Tarkov has sparked massive panic; the local population has fled the city, but those who stayed are looking to improve their fortunes at the expense of others. Having accepted the new reality, savage Tarkov locals - "Scavs" flocked into well-armed gangs and started the redivision of the city. Nowadays, Tarkov is separated by unseen borders, controlled by different groups. Gain-greedy gunmen would go to any length to have their way, including the murder of civilians and direct confrontation with the two private military companies.<br><br>
+                
+                The players will have to experience living in the skin of one of the mercenaries who survived the initial stage of the Tarkov conflict. After choosing one of the sides – USEC or BEAR – the player’s character starts to make his way out of the city. Tarkov is sealed off by UN and Russian military, supply chains are cut, communication with operational command is lost, and in these conditions everyone has to make his own choices of what to do and how to get out of the chaos-ridden metropolis.
+            </p>
+        </div>
+        <div class="requirements">
+            <h2 id="requirements">Requirements</h2>
+            <div class="specs">
+                <h3>Minimum</h3>
+                <dl>
+                    <dt>CPU</dt>
+                    <dd>Dual-core processor 2.4 GHz (Intel Core 2 Duo, i3), 2.6 GHz (AMD Athlon, Phenom II)</dd>
+                    <dt>RAM</dt>
+                    <dd>6 GB</dd>
+                    <dt>OS</dt>
+                    <dd>Windows 7/8/10 (64 Bit)</dd>
+                    <dt>Video Card</dt>
+                    <dd>DX11 compatible graphics card with 1 GB memory</dd>
+                    <dt>Pixel Shader</dt>
+                    <dd>5.0</dd>
+                    <dt>Vertex Shader</dt>
+                    <dd>5.0</dd>
+                    <dt>Disk Space</dt>
+                    <dd>19 GB</dd>
+                </dl>
+            </div>
+            <div class="specs">
+                <h3>Recommended</h3>
+                <dl>
+                    <dt>CPU</dt>
+                    <dd>Quad-core processor 3.2 GHz (Intel i5, i7) or 3.6 GHz (AMD FX, Athlon)</dd>
+                    <dt>RAM</dt>
+                    <dd>8 GB</dd>
+                    <dt>OS</dt>
+                    <dd>Windows 7/8/10 (64 Bit)</dd>
+                    <dt>Video Card</dt>
+                    <dd>DX11 compatible graphics card with 2 GB or more of memory</dd>
+                    <dt>Pixel Shader</dt>
+                    <dd>5.0</dd>
+                    <dt>Vertex Shader</dt>
+                    <dd>5.0</dd>
+                    <dt>Disk Space</dt>
+                    <dd>19 GB</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="download">
+            <h2 id="download">Download Info</h2>
+            <img src="images/launcher.jpg" id="launcher-img">
+            <ol>
+                <li>If you haven't, purchace EFT <a href="https://www.escapefromtarkov.com/preorder-page">here</a></li>
+                <li>Download the launcher</li>
+                <li>Login into the launcher using the profile made during purchace</li>
+                <li>Press the download button</li>
+                <li>Wait until the launcher shows the play button</li>
+                <li>Press play and enjoy</li>
+            </ol>
+        </div>
+        <div class="questions">
+            <h2 id="questions">Questions</h2>
+            <button id="faqbtn" class="btn">Frequently asked questions</button>
+            <div class="bgblur"></div>
+            <div class="faq-popup">
+                <img src="images/close.png" id="popup-close">
+                <p><strong>How much does the game cost?</strong></p>
+                <p>It changes in response to the region you are living in, but the standard edition costs around 35€ and the edge of darkness edition costs 110€</p>
+                <p><strong>What kind of editions are there</strong></p>
+                <p>There are 4 kinds of editions:</p>
+                <ul>
+                    <li>Standard</li>
+                    <li>Left behind</li>
+                    <li>Prepare to escape</li>
+                    <li>Edge of darkness</li>
+                </ul>
+            </div>
+            <form action="https://www.w3schools.com/action_page.php" id="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="form-input">
+                    <small id="nameCheck" class="check-message">Name must be more than 3 and less than 20 characters</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required class="form-input">
+                    <small id="emailCheck" class="check-message">Your email must be a valid email</small>
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <input type="number" name="priority" id="priority" class="form-input">
+                    <small id="priorityCheck" class="check-message">Priority must be between 1 and 5 (included)</small>
+                </div>
+                <div class="form-group">
+                    <label for="question">Question:</label>
+                    <textarea name="question" id="question" class="form-input input-area"></textarea>
+                    <small id="questionCheck"class="check-message">Question must have at least 10 characters</small>
+                </div>
+                <input type="submit" id="submitbtn" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
